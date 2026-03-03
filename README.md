@@ -16,17 +16,29 @@ Service Layer (crm/services/*)
 Middleware API (crm/api/*)  [API key protected]
   ↓
 HubSpot CRM
-The system follows a layered architecture:
 
+# SolarPeak Inbound Qualification (Vapi + Django + HubSpot)
+
+This project implements an AI-powered inbound call qualification system for SolarPeak Solutions. It uses Vapi.ai for real-time voice conversations and synchronizes qualified/disqualified leads into HubSpot via a secure middleware API abstraction layer.
+
+---
+
+## Architecture Overview
+
+### High-level flow
+
+```text
+Caller
+  ↓
 Vapi Voice Agent
-        ↓
-Webhook Layer (Event Ingestion)
-        ↓
-Service Layer (Business Logic)
-        ↓
-Middleware API (/api/leads)
-        ↓
-CRM Service (HubSpot)
+  ↓
+Webhook Layer (crm/webhook/views.py)
+  ↓
+Service Layer (crm/services/*)
+  ↓
+Middleware API (crm/api/*)  [API key protected]
+  ↓
+HubSpot CRM
 
 **Key design decisions**
 Deterministic email capture (tool-only): Email is captured via a Vapi tool call and stored as ConfirmedEmail(call_id → email). The system does not parse email from transcripts to avoid STT corruption.
