@@ -3,8 +3,6 @@
 
 This project implements an AI-powered inbound call qualification system for SolarPeak Solutions. It uses Vapi.ai for real-time voice conversations and synchronizes qualified/disqualified leads into HubSpot via a secure middleware API abstraction layer.
 
-## Architecture Overview
-
 ### High-level flow
 
 Caller
@@ -24,27 +22,12 @@ Deterministic email capture (tool-only): Email is captured via a Vapi tool call 
 CRM abstraction: The webhook calls POST /api/leads (middleware). HubSpot integration is isolated in crm/services/hubspot.py.
 Separation of concerns: Webhook ingestion, business logic, middleware API, and CRM adapter are separate modules.
 
-**Repo Structure**
-crm/
-├── webhook/
-│   └── views.py              # Vapi webhook + tool endpoints
-├── api/
-│   ├── views.py              # Wrapper API endpoints (/api/leads, /api/calls/.../summary)
-│   ├── auth.py               # API key auth
-│   └── urls.py               # Wrapper API routes
-├── services/
-│   ├── qualification.py      # qualification + step detection rules
-│   ├── email_capture.py      # deterministic confirmed email retrieval
-│   ├── lead_service.py       # lead + call persistence
-│   └── hubspot.py            # HubSpot upsert adapter
-└── models.py
-
 **Requirements**
-Python 3.11+ recommended
-Django 4.x/5.x
-HubSpot private app access token
-Vapi assistant configured with Server URL and tools
-ngrok for local development webhook testing (optional but recommended)
+ - Python 3.11+ recommended
+ - Django 4.x/5.x
+ - HubSpot private app access token
+ - Vapi assistant configured with Server URL and tools
+ - ngrok for local development webhook testing (optional but recommended)
 
 **Setup (Local)**
 1) Create and activate a virtualenv
