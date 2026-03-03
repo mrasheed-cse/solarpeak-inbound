@@ -16,6 +16,17 @@ Service Layer (crm/services/*)
 Middleware API (crm/api/*)  [API key protected]
   ↓
 HubSpot CRM
+The system follows a layered architecture:
+
+Vapi Voice Agent
+        ↓
+Webhook Layer (Event Ingestion)
+        ↓
+Service Layer (Business Logic)
+        ↓
+Middleware API (/api/leads)
+        ↓
+CRM Service (HubSpot)
 
 **Key design decisions**
 Deterministic email capture (tool-only): Email is captured via a Vapi tool call and stored as ConfirmedEmail(call_id → email). The system does not parse email from transcripts to avoid STT corruption.
