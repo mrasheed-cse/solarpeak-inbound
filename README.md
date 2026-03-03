@@ -53,3 +53,14 @@ Windows (PowerShell)
   python manage.py runserver 8000
 
 **Webhook Exposure (Local with ngrok)**
+Vapi cannot call localhost. Use ngrok to expose your local server:
+  ngrok http 8000
+
+You’ll get a public URL like:
+  https://abcd-1234.ngrok-free.app
+
+Set your Vapi Assistant Server URL to:
+  https://abcd-1234.ngrok-free.app/vapi/webhook/
+
+In Vapi, enable Server Messages:
+  end-of-call-report (required)
