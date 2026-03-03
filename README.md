@@ -27,7 +27,6 @@ This project implements an AI-powered inbound call qualification system for Sola
 
 ### High-level flow
 
-```text
 Caller
   ↓
 Vapi Voice Agent
