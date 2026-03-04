@@ -109,3 +109,10 @@ curl -s -X POST http://localhost:8000/api/calls/<CALL_ID>/summary \
   -H "Content-Type: application/json" \
   -H "X-API-KEY: solarpeak-internal-key" \
   -d '{"summary":{"short":"Qualified lead","callback":"tomorrow morning"}}' <br>
+
+**Vapi Tool Endpoints**
+The Django backend exposes tool endpoints (configured in Vapi tools): <br>
+ - POST /vapi/tool/confirm-email/ <br>
+ - POST /vapi/tool/lookup-lead-state/ <br>
+These are invoked by the assistant during the call. <br>
+
