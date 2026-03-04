@@ -78,7 +78,7 @@ In Vapi, enable Server Messages:
  - ALLOWED_HOSTS (in dev you can use *, in prod set your domain)
 
 Example .env: <br>
-    HUBSPOT_ACCESS_TOKEN=pat-xxxxxxxxxxxxxxxxxxxxxxxx <br>
-    INTERNAL_API_KEY=solarpeak-internal-key <br>
-    DEBUG=true <br>
-    ALLOWED_HOSTS=* <br>
+&nbsp&nbspHUBSPOT_ACCESS_TOKEN=pat-xxxxxxxxxxxxxxxxxxxxxxxx <br>
+&nbsp&nbspINTERNAL_API_KEY=solarpeak-internal-key <br>
+&nbsp&nbspDEBUG=true <br>
+&nbsp&nbspALLOWED_HOSTS=* <br>
