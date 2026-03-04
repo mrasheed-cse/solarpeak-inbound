@@ -83,7 +83,7 @@ Example .env: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;DEBUG=true <br>
 &nbsp;&nbsp;&nbsp;&nbsp;ALLOWED_HOSTS=* <br>
 
-Wrapper API Endpoints (Middleware)
+Wrapper API Endpoints (Middleware) <br>
 All endpoints require: X-API-KEY: <INTERNAL_API_KEY><br>
 **Create/Update lead** <br>
 POST /api/leads <br>
@@ -91,4 +91,21 @@ Example: <br>
 curl -s -X POST http://localhost:8000/api/leads \ 
   -H "Content-Type: application/json" \
   -H "X-API-KEY: solarpeak-internal-key" \
-  -d '{"email":"demo@example.com","qualification_result":"Qualified","current_step":"collecting_contact","ended_reason":"customer-ended-call"}'
+  -d '{"email":"demo@example.com","qualification_result":"Qualified","current_step":"collecting_contact","ended_reason":"customer-ended-call"}' <br><br>
+
+**List leads (with filtering)** <br>
+GET /api/leads?status=qualified&qualification_result=Qualified&limit=50 <br>
+
+**Retrieve lead** <br>
+GET /api/leads/{id} <br>
+
+**Update lead** <br>
+PATCH /api/leads/{id} <br>
+
+**Store call summary**
+POST /api/calls/{call_id}/summary <br>
+Example: <br>
+curl -s -X POST http://localhost:8000/api/calls/<CALL_ID>/summary \
+  -H "Content-Type: application/json" \
+  -H "X-API-KEY: solarpeak-internal-key" \
+  -d '{"summary":{"short":"Qualified lead","callback":"tomorrow morning"}}' <br>
