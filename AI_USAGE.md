@@ -25,3 +25,22 @@ AI assisted in: <br>
 • HubSpot upsert adapter structure <br>
 Documentation templates (README, integration guide)
 All generated code was manually reviewed, integrated, and tested before use.
+
+<H4> 3. Debugging Support </H4>
+AI was used to help identify potential causes of: <br>
+
+&nbsp;&nbsp;• Vapi webhook 500 errors (JSON parsing on GET requests)<br>
+&nbsp;&nbsp;• Call ID mismatches in tool calls<br>
+&nbsp;&nbsp;• Transcript-based email corruption<br>
+&nbsp;&nbsp;• NOT NULL database constraint violations<br>
+&nbsp;&nbsp;• Middleware authentication failures<br>
+
+Each suggested fix was validated through:<br>
+
+&nbsp;&nbsp;• Django tracebacks<br>
+&nbsp;&nbsp;• ngrok logs<br>
+&nbsp;&nbsp;• Vapi webhook logs<br>
+&nbsp;&nbsp;• Manual curl tests<br>
+&nbsp;&nbsp;• HubSpot record inspection<br>
+&nbsp;&nbsp;• Direct database queries via Django ORM<br>
+No fixes were applied without verification.<br>
