@@ -122,7 +122,7 @@ These are invoked by the assistant during the call. <br>
  - Ensure ngrok is running <br>
  - Ensure Vapi Server URL is correct and includes /vapi/webhook/ <br>
  - Ensure end-of-call-report is enabled <br>
- - Ensure Django route matches exactly (trailing slash) <br>
+ - Ensure Django route matches exactly (trailing slash) <br><br>
 
 <ins> Webhook 500 error </ins> <br>
  - Check Django traceback <br>
