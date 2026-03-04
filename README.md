@@ -65,7 +65,7 @@ Set your Vapi Assistant Server URL to:
 In Vapi, enable Server Messages:
   end-of-call-report (required)
 
-**Environment Variables** <br>
+<H3>Environment Variables</H3>
  <ins>Required:</ins> <br>
    - HUBSPOT_ACCESS_TOKEN <br>
      HubSpot Private App token used to create/update contacts. <br>
