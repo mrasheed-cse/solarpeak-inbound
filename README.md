@@ -82,3 +82,13 @@ Example .env: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;INTERNAL_API_KEY=solarpeak-internal-key <br>
 &nbsp;&nbsp;&nbsp;&nbsp;DEBUG=true <br>
 &nbsp;&nbsp;&nbsp;&nbsp;ALLOWED_HOSTS=* <br>
+
+Wrapper API Endpoints (Middleware)
+All endpoints require: X-API-KEY: <INTERNAL_API_KEY><br>
+**Create/Update lead** <br>
+POST /api/leads <br>
+Example: <br>
+curl -s -X POST http://localhost:8000/api/leads \ 
+  -H "Content-Type: application/json" \
+  -H "X-API-KEY: solarpeak-internal-key" \
+  -d '{"email":"demo@example.com","qualification_result":"Qualified","current_step":"collecting_contact","ended_reason":"customer-ended-call"}'
