@@ -5,7 +5,7 @@ All AI-generated content was reviewed, modified where necessary, and validated t
 
 <H2>Scope of AI Assistance</H2>
 AI was used in the following areas: <br>
-1. Architectural Planning <br>
+<H3> 1. Architectural Planning </H3> <br>
 AI assisted in: <br>
  - Proposing a layered architecture (Webhook → Service Layer → Middleware API → CRM Adapter). <br>
  - Identifying appropriate separation of concerns. <br>
