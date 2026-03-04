@@ -123,13 +123,13 @@ These are invoked by the assistant during the call. <br>
  - Ensure end-of-call-report is enabled <br>
  - Ensure Django route matches exactly (trailing slash) <br>
 
-<u> Webhook 500 error </u> <br>
+<ins> Webhook 500 error </ins> <br>
  - Check Django traceback <br>
  - Ensure non-POST requests return 200 (health checks / browser hits) <br>
  - Ensure INTERNAL_API_KEY is set <br>
  - Ensure middleware endpoints are reachable locally <br>
  
-<u> Middleware 401 </u> <br>
+<ins> Middleware 401 </ins> <br>
  - Ensure X-API-KEY header matches INTERNAL_API_KEY <br>
  - HubSpot not updating <br>
  - Confirm HubSpot token and scopes <br>
