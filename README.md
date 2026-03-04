@@ -91,7 +91,7 @@ Example: <br>
 curl -s -X POST http://localhost:8000/api/leads \ 
   -H "Content-Type: application/json" \
   -H "X-API-KEY: solarpeak-internal-key" \
-  -d '{"email":"demo@example.com","qualification_result":"Qualified","current_step":"collecting_contact","ended_reason":"customer-ended-call"}' <br><br>
+  -d '{"email":"demo@example.com","qualification_result":"Qualified","current_step":"collecting_contact","ended_reason":"customer-ended-call"}' <br>
 
 **List leads (with filtering)** <br>
 GET /api/leads?status=qualified&qualification_result=Qualified&limit=50 <br>
