@@ -11,3 +11,17 @@ AI assisted in: <br>
  ⁃ Identifying appropriate separation of concerns. <br>
  ⁃ Suggesting safe refactoring sequences. <br>
 <br>Final architectural decisions (including incremental migration instead of a full rewrite) were made independently to reduce regression risk.
+
+<H4> 2. Boilerplate Generation </H4>
+ AI was used to draft initial versions of: <br>
+
+Middleware API endpoints:
+POST /api/leads
+GET /api/leads/{id}
+PATCH /api/leads/{id}
+GET /api/leads
+POST /api/calls/{call_id}/summary
+API key authentication decorator
+HubSpot upsert adapter structure
+Documentation templates (README, integration guide)
+All generated code was manually reviewed, integrated, and tested before use.
