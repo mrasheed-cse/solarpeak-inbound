@@ -10,3 +10,4 @@ AI assisted in: <br>
  ⁃ Proposing a layered architecture (Webhook → Service Layer → Middleware API → CRM Adapter). <br>
  ⁃ Identifying appropriate separation of concerns. <br>
  ⁃ Suggesting safe refactoring sequences. <br>
+Final architectural decisions (including incremental migration instead of a full rewrite) were made independently to reduce regression risk.
