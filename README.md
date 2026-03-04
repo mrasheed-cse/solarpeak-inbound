@@ -117,7 +117,7 @@ The Django backend exposes tool endpoints (configured in Vapi tools): <br>
 These are invoked by the assistant during the call. <br>
 
 **Common Troubleshooting** <br>
-<u>Webhook not firing</u> <br>
+<ins>Webhook not firing</ins> <br>
  - Ensure ngrok is running <br>
  - Ensure Vapi Server URL is correct and includes /vapi/webhook/ <br>
  - Ensure end-of-call-report is enabled <br>
