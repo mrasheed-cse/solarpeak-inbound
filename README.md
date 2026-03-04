@@ -66,25 +66,25 @@ In Vapi, enable Server Messages:
   end-of-call-report (required)
 
 **Environment Variables** <br>
- Required: <br>
+ <ins>Required:</ins> <br>
    - HUBSPOT_ACCESS_TOKEN <br>
      HubSpot Private App token used to create/update contacts. <br>
    - INTERNAL_API_KEY <br>
      API key used to protect internal wrapper API endpoints and authenticate webhook → middleware requests. <br>
 
- Recommended additional Django env vars: <br>
+ <ins>Recommended additional Django env vars:</ins> <br>
  - DJANGO_SECRET_KEY
  - DEBUG (true/false)
  - ALLOWED_HOSTS (in dev you can use *, in prod set your domain)
 
-Example .env: <br>
+<ins>Example .env:</ins> <br>
 &nbsp;&nbsp;&nbsp;&nbsp;HUBSPOT_ACCESS_TOKEN=pat-xxxxxxxxxxxxxxxxxxxxxxxx <br>
 &nbsp;&nbsp;&nbsp;&nbsp;INTERNAL_API_KEY=solarpeak-internal-key <br>
 &nbsp;&nbsp;&nbsp;&nbsp;DEBUG=true <br>
 &nbsp;&nbsp;&nbsp;&nbsp;ALLOWED_HOSTS=* <br>
 
 Wrapper API Endpoints (Middleware) <br>
-All endpoints require: X-API-KEY: <INTERNAL_API_KEY><br>
+All endpoints require: X-API-KEY: <INTERNAL_API_KEY><br><br>
 **Create/Update lead** <br>
 POST /api/leads <br>
 Example: <br>
