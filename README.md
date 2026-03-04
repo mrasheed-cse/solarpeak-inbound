@@ -83,7 +83,7 @@ In Vapi, enable Server Messages:
 &nbsp;&nbsp;&nbsp;&nbsp;DEBUG=true <br>
 &nbsp;&nbsp;&nbsp;&nbsp;ALLOWED_HOSTS=* <br>
 
-<H4>Wrapper API Endpoints (Middleware)</H4>
+<H3>Wrapper API Endpoints (Middleware)</H3>
 
 All endpoints require: X-API-KEY: <INTERNAL_API_KEY><br><br>
 **Create/Update lead** <br>
