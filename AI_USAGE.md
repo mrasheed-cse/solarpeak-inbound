@@ -15,12 +15,12 @@ AI assisted in: <br>
 <H4> 2. Boilerplate Generation </H4>
  AI was used to draft initial versions of: <br>
 
-• Middleware API endpoints:
-   ○ POST /api/leads
-   ○ GET /api/leads/{id}
-   ○ PATCH /api/leads/{id}
-   ○ GET /api/leads
-   ○ POST /api/calls/{call_id}/summary
+• Middleware API endpoints: <br>
+   ○ POST /api/leads <br>
+   ○ GET /api/leads/{id} <br>
+   ○ PATCH /api/leads/{id} <br>
+   ○ GET /api/leads <br>
+   ○ POST /api/calls/{call_id}/summary <br>
 • API key authentication decorator
 • HubSpot upsert adapter structure
 Documentation templates (README, integration guide)
