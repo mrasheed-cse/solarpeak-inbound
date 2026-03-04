@@ -67,11 +67,10 @@ In Vapi, enable Server Messages:
 
 **Environment Variables**
  Required:
- - HUBSPOT_ACCESS_TOKEN
-   HubSpot Private App token used to create/update contacts.
-
- - INTERNAL_API_KEY
-  API key used to protect internal wrapper API endpoints and authenticate webhook → middleware requests.
+   • HUBSPOT_ACCESS_TOKEN
+     HubSpot Private App token used to create/update contacts.
+   • INTERNAL_API_KEY
+     API key used to protect internal wrapper API endpoints and authenticate webhook → middleware requests.
 
  Recommended additional Django env vars:
  - DJANGO_SECRET_KEY
