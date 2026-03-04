@@ -35,7 +35,7 @@ AI was used to help identify potential causes of: <br>
 &nbsp;&nbsp;• NOT NULL database constraint violations<br>
 &nbsp;&nbsp;• Middleware authentication failures<br>
 
-Each suggested fix was validated through:<br>
+Each suggested fix was validated through:
 
 &nbsp;&nbsp;• Django tracebacks<br>
 &nbsp;&nbsp;• ngrok logs<br>
