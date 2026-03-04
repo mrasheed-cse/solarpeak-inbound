@@ -117,7 +117,7 @@ The Django backend exposes tool endpoints (configured in Vapi tools): <br>
  - POST /vapi/tool/lookup-lead-state/ <br>
 These are invoked by the assistant during the call. <br>
 
-</H3>Common Troubleshooting</H3>
+<H3>Common Troubleshooting</H3>
 <ins>Webhook not firing</ins> <br>
  - Ensure ngrok is running <br>
  - Ensure Vapi Server URL is correct and includes /vapi/webhook/ <br>
