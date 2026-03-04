@@ -117,19 +117,19 @@ The Django backend exposes tool endpoints (configured in Vapi tools): <br>
 These are invoked by the assistant during the call. <br>
 
 **Common Troubleshooting** <br>
-Webhook not firing <br>
+<u>Webhook not firing</u> <br>
  - Ensure ngrok is running <br>
  - Ensure Vapi Server URL is correct and includes /vapi/webhook/ <br>
  - Ensure end-of-call-report is enabled <br>
  - Ensure Django route matches exactly (trailing slash) <br>
 
-Webhook 500 error <br>
+<u>Webhook 500 error</u> <br>
  - Check Django traceback <br>
  - Ensure non-POST requests return 200 (health checks / browser hits) <br>
  - Ensure INTERNAL_API_KEY is set <br>
  - Ensure middleware endpoints are reachable locally <br>
  
-Middleware 401 <br>
+<u>Middleware 401</u> <br>
  - Ensure X-API-KEY header matches INTERNAL_API_KEY <br>
  - HubSpot not updating <br>
  - Confirm HubSpot token and scopes <br>
