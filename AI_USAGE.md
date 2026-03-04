@@ -16,12 +16,12 @@ AI assisted in: <br>
  AI was used to draft initial versions of: <br>
 
 • Middleware API endpoints: <br>
-   ○ POST /api/leads <br>
-   ○ GET /api/leads/{id} <br>
-   ○ PATCH /api/leads/{id} <br>
-   ○ GET /api/leads <br>
-   ○ POST /api/calls/{call_id}/summary <br>
-• API key authentication decorator
-• HubSpot upsert adapter structure
+   ⁃ POST /api/leads <br>
+   ⁃ GET /api/leads/{id} <br>
+   ⁃ PATCH /api/leads/{id} <br>
+   ⁃ GET /api/leads <br>
+   ⁃ POST /api/calls/{call_id}/summary <br>
+• API key authentication decorator <br>
+• HubSpot upsert adapter structure <br>
 Documentation templates (README, integration guide)
 All generated code was manually reviewed, integrated, and tested before use.
